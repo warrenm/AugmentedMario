@@ -36,12 +36,12 @@ vertex MarioVertexOut vertex_mario(MarioVertexIn in [[stage_in]],
     out.normal = in.normal;
     out.light = transpose(lightMatrix) * normalize(float3(1));
     out.uv = in.uv;
-    out.position = uniforms.projection * uniforms.view * float4( in.position, 1.0);
+    out.position = uniforms.projection * uniforms.view * float4(in.position, 1.0);
     return out;
 }
 
-fragment float4 fragment_mario (MarioVertexOut in [[stage_in]],
-                                texture2d<float, access::sample> marioTex [[texture(0)]])
+fragment float4 fragment_mario(MarioVertexOut in [[stage_in]],
+                               texture2d<float, access::sample> marioTex [[texture(0)]])
 {
     constexpr sampler nearestSampler(coord::normalized, filter::nearest);
     float light = 0.5 + 0.5 * saturate(dot(in.normal, in.light));
@@ -98,10 +98,8 @@ static float surfFunc( float3 p )
     return abs(n - 0.5) * 1.9 + (1.0 - abs(sin(n * 9.0))) * 0.05;
 }
 
-//constant const float3 light_x = float3(-1.0, 0.4, 0.9);
-
-float4 fragment_world(WorldVertexOut in [[stage_in]],
-                      texture2d<float, access::sample> tex [[texture(0)]])
+fragment float4 fragment_world(WorldVertexOut in [[stage_in]],
+                               texture2d<float, access::sample> tex [[texture(0)]])
 {
     float surfy = surfFunc(in.worldPos / 50.0);
     float brightness = smoothstep(0.2, 0.3, surfy);

@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		830D4C3227FA1F4200E29912 /* MarioShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C79527F927F2001A0EB7 /* MarioShaders.metal */; };
+		83613EF927FA3A6000C7948B /* Mario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83613EF827FA3A6000C7948B /* Mario.swift */; };
+		83613EFD27FA44A100C7948B /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83613EFC27FA44A100C7948B /* Math.swift */; };
+		83613EFE27FA539F00C7948B /* level.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6A627F920D9001A0EB7 /* level.c */; };
+		83613F0027FA55DA00C7948B /* Bridge.c in Sources */ = {isa = PBXBuildFile; fileRef = 83613EFF27FA55DA00C7948B /* Bridge.c */; };
+		83613F0127FA57A700C7948B /* libsm64.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B0C69F27F92083001A0EB7 /* libsm64.dylib */; };
+		83613F0227FA57E900C7948B /* libsm64.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 83B0C69F27F92083001A0EB7 /* libsm64.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		83613F0427FA584D00C7948B /* baserom.us.z64 in Resources */ = {isa = PBXBuildFile; fileRef = 83B0C6A427F920D9001A0EB7 /* baserom.us.z64 */; };
 		83B0C68527F904B1001A0EB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C68427F904B1001A0EB7 /* AppDelegate.swift */; };
 		83B0C68727F904B1001A0EB7 /* CameraShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C68627F904B1001A0EB7 /* CameraShaders.metal */; };
 		83B0C68A27F904B1001A0EB7 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C68927F904B1001A0EB7 /* Renderer.swift */; };
@@ -139,6 +146,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		83613F0327FA57EA00C7948B /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				83613F0227FA57E900C7948B /* libsm64.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		83B0C78427F922E7001A0EB7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -152,6 +170,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		83613EF827FA3A6000C7948B /* Mario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mario.swift; sourceTree = "<group>"; };
+		83613EFA27FA3B9C00C7948B /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		83613EFC27FA44A100C7948B /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		83613EFF27FA55DA00C7948B /* Bridge.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Bridge.c; sourceTree = "<group>"; };
 		83B0C68127F904B1001A0EB7 /* AugmentedMario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AugmentedMario.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B0C68427F904B1001A0EB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83B0C68627F904B1001A0EB7 /* CameraShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CameraShaders.metal; sourceTree = "<group>"; };
@@ -273,6 +295,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83613F0127FA57A700C7948B /* libsm64.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +343,10 @@
 				83B0C68427F904B1001A0EB7 /* AppDelegate.swift */,
 				83B0C68B27F904B1001A0EB7 /* ViewController.swift */,
 				83B0C68927F904B1001A0EB7 /* Renderer.swift */,
+				83613EF827FA3A6000C7948B /* Mario.swift */,
+				83613EFC27FA44A100C7948B /* Math.swift */,
+				83613EFA27FA3B9C00C7948B /* Bridge.h */,
+				83613EFF27FA55DA00C7948B /* Bridge.c */,
 				83B0C79527F927F2001A0EB7 /* MarioShaders.metal */,
 				83B0C68627F904B1001A0EB7 /* CameraShaders.metal */,
 				83B0C68D27F904B1001A0EB7 /* Main.storyboard */,
@@ -610,6 +637,7 @@
 				83B0C67D27F904B1001A0EB7 /* Sources */,
 				83B0C67E27F904B1001A0EB7 /* Frameworks */,
 				83B0C67F27F904B1001A0EB7 /* Resources */,
+				83613F0327FA57EA00C7948B /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -670,6 +698,7 @@
 				TargetAttributes = {
 					83B0C68027F904B1001A0EB7 = {
 						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
 					};
 					83B0C69E27F92083001A0EB7 = {
 						CreatedOnToolsVersion = 13.3;
@@ -707,6 +736,7 @@
 				83B0C69427F904B2001A0EB7 /* LaunchScreen.storyboard in Resources */,
 				83B0C69127F904B2001A0EB7 /* Assets.xcassets in Resources */,
 				83B0C68F27F904B1001A0EB7 /* Main.storyboard in Resources */,
+				83613F0427FA584D00C7948B /* baserom.us.z64 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,10 +788,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83613EFE27FA539F00C7948B /* level.c in Sources */,
 				830D4C3227FA1F4200E29912 /* MarioShaders.metal in Sources */,
 				83B0C68727F904B1001A0EB7 /* CameraShaders.metal in Sources */,
 				83B0C68A27F904B1001A0EB7 /* Renderer.swift in Sources */,
+				83613EFD27FA44A100C7948B /* Math.swift in Sources */,
+				83613F0027FA55DA00C7948B /* Bridge.c in Sources */,
 				83B0C68C27F904B1001A0EB7 /* ViewController.swift in Sources */,
+				83613EF927FA3A6000C7948B /* Mario.swift in Sources */,
 				83B0C68527F904B1001A0EB7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -903,7 +937,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -957,7 +992,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -972,6 +1008,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G784MNW7L7;
@@ -983,9 +1020,7 @@
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "arkit metal";
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -994,7 +1029,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.fourspace.AugmentedMario;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = AugmentedMario/Bridge.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1005,6 +1041,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G784MNW7L7;
@@ -1016,9 +1053,7 @@
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "arkit metal";
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1027,7 +1062,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.fourspace.AugmentedMario;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = AugmentedMario/Bridge.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1049,11 +1084,13 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_UNINITIALIZED_AUTOS = NO;
 				HEADER_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
+				INSTALL_PATH = "@rpath";
 				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
-				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos";
 			};
 			name = Debug;
 		};
@@ -1069,11 +1106,13 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_UNINITIALIZED_AUTOS = NO;
 				HEADER_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
+				INSTALL_PATH = "@rpath";
 				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
-				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos";
 			};
 			name = Release;
 		};
@@ -1091,7 +1130,7 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				HEADER_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
 				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
-				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				OTHER_LDFLAGS = "-lSDL2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1108,7 +1147,7 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				HEADER_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
 				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
-				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				OTHER_LDFLAGS = "-lSDL2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;

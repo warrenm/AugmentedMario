@@ -26,8 +26,6 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
             }
 
             renderer = Renderer(session: session, metalDevice: view.device!, renderDestination: view)
-            
-            renderer.drawRectResized(size: view.bounds.size)
         }
     }
     
@@ -48,7 +46,6 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
     // MARK: - MTKViewDelegate
 
     func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize) {
-        renderer.drawRectResized(size: size)
     }
     
     func draw(in view: MTKView) {
