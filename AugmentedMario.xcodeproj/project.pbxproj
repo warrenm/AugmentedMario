@@ -1,0 +1,1160 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		830D4C3227FA1F4200E29912 /* MarioShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C79527F927F2001A0EB7 /* MarioShaders.metal */; };
+		83B0C68527F904B1001A0EB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C68427F904B1001A0EB7 /* AppDelegate.swift */; };
+		83B0C68727F904B1001A0EB7 /* CameraShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C68627F904B1001A0EB7 /* CameraShaders.metal */; };
+		83B0C68A27F904B1001A0EB7 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C68927F904B1001A0EB7 /* Renderer.swift */; };
+		83B0C68C27F904B1001A0EB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C68B27F904B1001A0EB7 /* ViewController.swift */; };
+		83B0C68F27F904B1001A0EB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B0C68D27F904B1001A0EB7 /* Main.storyboard */; };
+		83B0C69127F904B2001A0EB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B0C69027F904B2001A0EB7 /* Assets.xcassets */; };
+		83B0C69427F904B2001A0EB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B0C69227F904B2001A0EB7 /* LaunchScreen.storyboard */; };
+		83B0C71B27F920DA001A0EB7 /* ns_clock.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6A727F920D9001A0EB7 /* ns_clock.h */; };
+		83B0C71C27F920DA001A0EB7 /* context.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6A827F920D9001A0EB7 /* context.h */; };
+		83B0C71D27F920DA001A0EB7 /* level.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6A927F920D9001A0EB7 /* level.h */; };
+		83B0C71E27F920DA001A0EB7 /* cglm.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6AA27F920D9001A0EB7 /* cglm.h */; };
+		83B0C72227F920DA001A0EB7 /* debug_print.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6B327F920D9001A0EB7 /* debug_print.h */; };
+		83B0C72327F920DA001A0EB7 /* load_anim_data.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6B427F920D9001A0EB7 /* load_anim_data.c */; };
+		83B0C72427F920DA001A0EB7 /* gfx_adapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6B527F920D9001A0EB7 /* gfx_adapter.h */; };
+		83B0C72527F920DA001A0EB7 /* obj_pool.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6B627F920D9001A0EB7 /* obj_pool.h */; };
+		83B0C72627F920DA001A0EB7 /* load_tex_data.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6B727F920D9001A0EB7 /* load_tex_data.h */; };
+		83B0C72727F920DA001A0EB7 /* gfx_macros.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6B827F920D9001A0EB7 /* gfx_macros.h */; };
+		83B0C72827F920DA001A0EB7 /* gfx_adapter_commands.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6B927F920D9001A0EB7 /* gfx_adapter_commands.h */; };
+		83B0C72927F920DA001A0EB7 /* libsm64.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6BA27F920D9001A0EB7 /* libsm64.h */; };
+		83B0C72A27F920DA001A0EB7 /* load_surfaces.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6BB27F920D9001A0EB7 /* load_surfaces.c */; };
+		83B0C72B27F920DA001A0EB7 /* obj_pool.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6BC27F920D9001A0EB7 /* obj_pool.c */; };
+		83B0C72C27F920DA001A0EB7 /* gfx_adapter.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6BD27F920D9001A0EB7 /* gfx_adapter.c */; };
+		83B0C72D27F920DA001A0EB7 /* load_anim_data.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6BE27F920D9001A0EB7 /* load_anim_data.h */; };
+		83B0C72E27F920DA001A0EB7 /* debug_print.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6BF27F920D9001A0EB7 /* debug_print.c */; };
+		83B0C72F27F920DA001A0EB7 /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6C227F920D9001A0EB7 /* utils.h */; };
+		83B0C73027F920DA001A0EB7 /* libmio0.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6C327F920D9001A0EB7 /* libmio0.h */; };
+		83B0C73127F920DA001A0EB7 /* n64graphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6C427F920D9001A0EB7 /* n64graphics.h */; };
+		83B0C73227F920DA001A0EB7 /* stb_image_write.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6C627F920D9001A0EB7 /* stb_image_write.h */; };
+		83B0C73327F920DA001A0EB7 /* stb_image.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6C727F920D9001A0EB7 /* stb_image.h */; };
+		83B0C73427F920DA001A0EB7 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6C827F920D9001A0EB7 /* utils.c */; };
+		83B0C73527F920DA001A0EB7 /* libmio0.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6C927F920D9001A0EB7 /* libmio0.c */; };
+		83B0C73727F920DA001A0EB7 /* global_state.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6CB27F920D9001A0EB7 /* global_state.h */; };
+		83B0C73827F920DA001A0EB7 /* memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6CC27F920D9001A0EB7 /* memory.c */; };
+		83B0C73927F920DA001A0EB7 /* command_macros_base.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6CE27F920D9001A0EB7 /* command_macros_base.h */; };
+		83B0C73A27F920DA001A0EB7 /* surface_terrains.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6CF27F920D9001A0EB7 /* surface_terrains.h */; };
+		83B0C73B27F920DA001A0EB7 /* sm64.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6D027F920D9001A0EB7 /* sm64.h */; };
+		83B0C73C27F920DA001A0EB7 /* types.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6D127F920D9001A0EB7 /* types.h */; };
+		83B0C73D27F920DA001A0EB7 /* mario_animation_ids.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6D227F920D9001A0EB7 /* mario_animation_ids.h */; };
+		83B0C73E27F920DA001A0EB7 /* mario_geo_switch_case_ids.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6D327F920D9001A0EB7 /* mario_geo_switch_case_ids.h */; };
+		83B0C73F27F920DA001A0EB7 /* audio_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6D427F920D9001A0EB7 /* audio_defines.h */; };
+		83B0C74027F920DA001A0EB7 /* level_misc_macros.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6D527F920D9001A0EB7 /* level_misc_macros.h */; };
+		83B0C74127F920DA001A0EB7 /* platform_info.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6D627F920D9001A0EB7 /* platform_info.h */; };
+		83B0C74227F920DA001A0EB7 /* os_cont.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6D827F920D9001A0EB7 /* os_cont.h */; };
+		83B0C74327F920DA001A0EB7 /* gbi.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6D927F920D9001A0EB7 /* gbi.h */; };
+		83B0C74427F920DA001A0EB7 /* ultratypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6DA27F920D9001A0EB7 /* ultratypes.h */; };
+		83B0C74527F920DA001A0EB7 /* special_preset_names.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6DB27F920D9001A0EB7 /* special_preset_names.h */; };
+		83B0C74627F920DA001A0EB7 /* macros.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6DC27F920D9001A0EB7 /* macros.h */; };
+		83B0C74727F920DA001A0EB7 /* object_fields.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6DD27F920D9001A0EB7 /* object_fields.h */; };
+		83B0C74827F920DA001A0EB7 /* seq_ids.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6DE27F920D9001A0EB7 /* seq_ids.h */; };
+		83B0C74927F920DA001A0EB7 /* geo_commands.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6DF27F920D9001A0EB7 /* geo_commands.h */; };
+		83B0C74A27F920DA001A0EB7 /* mario_actions_stationary.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6E127F920D9001A0EB7 /* mario_actions_stationary.h */; };
+		83B0C74B27F920DA001A0EB7 /* mario_actions_object.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6E227F920D9001A0EB7 /* mario_actions_object.c */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		83B0C74C27F920DA001A0EB7 /* mario_actions_moving.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6E327F920D9001A0EB7 /* mario_actions_moving.h */; };
+		83B0C74D27F920DA001A0EB7 /* rendering_graph_node.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6E427F920D9001A0EB7 /* rendering_graph_node.c */; };
+		83B0C74E27F920DA001A0EB7 /* mario.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6E527F920D9001A0EB7 /* mario.c */; };
+		83B0C74F27F920DA001A0EB7 /* mario_actions_automatic.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6E627F920D9001A0EB7 /* mario_actions_automatic.h */; };
+		83B0C75027F920DA001A0EB7 /* interaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6E727F920D9001A0EB7 /* interaction.h */; };
+		83B0C75127F920DA001A0EB7 /* mario_actions_cutscene.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6E827F920D9001A0EB7 /* mario_actions_cutscene.c */; };
+		83B0C75227F920DA001A0EB7 /* mario_step.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6E927F920D9001A0EB7 /* mario_step.h */; };
+		83B0C75327F920DA001A0EB7 /* camera.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6EA27F920D9001A0EB7 /* camera.h */; };
+		83B0C75427F920DA001A0EB7 /* mario_actions_submerged.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6EB27F920D9001A0EB7 /* mario_actions_submerged.h */; };
+		83B0C75527F920DA001A0EB7 /* mario_misc.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6EC27F920D9001A0EB7 /* mario_misc.h */; };
+		83B0C75627F920DA001A0EB7 /* behavior_actions.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6ED27F920D9001A0EB7 /* behavior_actions.c */; };
+		83B0C75727F920DA001A0EB7 /* area.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6EE27F920D9001A0EB7 /* area.h */; };
+		83B0C75827F920DA001A0EB7 /* mario_actions_airborne.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6EF27F920D9001A0EB7 /* mario_actions_airborne.c */; settings = {COMPILER_FLAGS = "-Wno-tautological-constant-out-of-range-compare"; }; };
+		83B0C75927F920DA001A0EB7 /* platform_displacement.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6F027F920D9001A0EB7 /* platform_displacement.h */; };
+		83B0C75A27F920DA001A0EB7 /* object_stuff.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6F127F920D9001A0EB7 /* object_stuff.h */; };
+		83B0C75B27F920DA001A0EB7 /* mario_actions_moving.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6F227F920D9001A0EB7 /* mario_actions_moving.c */; };
+		83B0C75C27F920DA001A0EB7 /* mario_actions_stationary.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6F327F920D9001A0EB7 /* mario_actions_stationary.c */; };
+		83B0C75D27F920DA001A0EB7 /* mario_actions_object.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6F427F920D9001A0EB7 /* mario_actions_object.h */; };
+		83B0C75E27F920DA001A0EB7 /* level_update.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6F527F920D9001A0EB7 /* level_update.h */; };
+		83B0C75F27F920DA001A0EB7 /* mario_actions_automatic.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6F627F920D9001A0EB7 /* mario_actions_automatic.c */; };
+		83B0C76027F920DA001A0EB7 /* mario.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6F727F920D9001A0EB7 /* mario.h */; };
+		83B0C76127F920DA001A0EB7 /* rendering_graph_node.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6F827F920D9001A0EB7 /* rendering_graph_node.h */; };
+		83B0C76227F920DA001A0EB7 /* save_file.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6F927F920D9001A0EB7 /* save_file.h */; };
+		83B0C76327F920DA001A0EB7 /* behavior_actions.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6FA27F920D9001A0EB7 /* behavior_actions.h */; };
+		83B0C76427F920DA001A0EB7 /* mario_misc.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6FB27F920D9001A0EB7 /* mario_misc.c */; };
+		83B0C76527F920DA001A0EB7 /* mario_actions_submerged.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6FC27F920D9001A0EB7 /* mario_actions_submerged.c */; };
+		83B0C76627F920DA001A0EB7 /* interaction.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6FD27F920D9001A0EB7 /* interaction.c */; };
+		83B0C76727F920DA001A0EB7 /* mario_step.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6FE27F920D9001A0EB7 /* mario_step.c */; };
+		83B0C76827F920DA001A0EB7 /* mario_actions_cutscene.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C6FF27F920D9001A0EB7 /* mario_actions_cutscene.h */; };
+		83B0C76927F920DA001A0EB7 /* platform_displacement.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C70027F920D9001A0EB7 /* platform_displacement.c */; };
+		83B0C76A27F920DA001A0EB7 /* object_stuff.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C70127F920D9001A0EB7 /* object_stuff.c */; };
+		83B0C76B27F920DA001A0EB7 /* mario_actions_airborne.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C70227F920D9001A0EB7 /* mario_actions_airborne.h */; };
+		83B0C76C27F920DA001A0EB7 /* global_state.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C70327F920D9001A0EB7 /* global_state.c */; };
+		83B0C76D27F920DA001A0EB7 /* memory.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C70427F920D9001A0EB7 /* memory.h */; };
+		83B0C76E27F920DA001A0EB7 /* model.inc.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C70627F920D9001A0EB7 /* model.inc.h */; };
+		83B0C76F27F920DA001A0EB7 /* geo.inc.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C70727F920D9001A0EB7 /* geo.inc.c */; };
+		83B0C77027F920DA001A0EB7 /* model.inc.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C70827F920D9001A0EB7 /* model.inc.c */; };
+		83B0C77127F920DA001A0EB7 /* geo.inc.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C70927F920D9001A0EB7 /* geo.inc.h */; };
+		83B0C77227F920DA001A0EB7 /* guMtxF2L.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C70B27F920D9001A0EB7 /* guMtxF2L.c */; };
+		83B0C77327F920DA001A0EB7 /* math_util.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C70C27F920D9001A0EB7 /* math_util.c */; settings = {COMPILER_FLAGS = "-Wno-return-stack-address"; }; };
+		83B0C77427F920DA001A0EB7 /* geo_layout.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C70D27F920D9001A0EB7 /* geo_layout.h */; };
+		83B0C77527F920DA001A0EB7 /* graph_node.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C70E27F920D9001A0EB7 /* graph_node.h */; };
+		83B0C77627F920DA001A0EB7 /* surface_collision.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C70F27F920D9001A0EB7 /* surface_collision.h */; };
+		83B0C77727F920DA001A0EB7 /* math_util.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C71027F920D9001A0EB7 /* math_util.h */; };
+		83B0C77827F920DA001A0EB7 /* guMtxF2L.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C71127F920D9001A0EB7 /* guMtxF2L.h */; };
+		83B0C77927F920DA001A0EB7 /* graph_node_manager.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C71227F920D9001A0EB7 /* graph_node_manager.c */; };
+		83B0C77A27F920DA001A0EB7 /* surface_collision.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C71327F920D9001A0EB7 /* surface_collision.c */; };
+		83B0C77B27F920DA001A0EB7 /* graph_node.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C71427F920D9001A0EB7 /* graph_node.c */; };
+		83B0C77C27F920DA001A0EB7 /* geo_layout.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C71527F920D9001A0EB7 /* geo_layout.c */; };
+		83B0C77D27F920DA001A0EB7 /* shim.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C71627F920D9001A0EB7 /* shim.h */; };
+		83B0C77E27F920DA001A0EB7 /* load_tex_data.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C71727F920D9001A0EB7 /* load_tex_data.c */; };
+		83B0C77F27F920DA001A0EB7 /* load_surfaces.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C71827F920D9001A0EB7 /* load_surfaces.h */; };
+		83B0C78027F920DA001A0EB7 /* libsm64.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C71927F920D9001A0EB7 /* libsm64.c */; };
+		83B0C78127F922B5001A0EB7 /* n64graphics.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6CA27F920D9001A0EB7 /* n64graphics.c */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
+		83B0C78D27F922EF001A0EB7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6AB27F920D9001A0EB7 /* main.c */; };
+		83B0C78E27F922EF001A0EB7 /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6AC27F920D9001A0EB7 /* context.c */; };
+		83B0C78F27F922EF001A0EB7 /* level.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6A627F920D9001A0EB7 /* level.c */; };
+		83B0C79327F9236B001A0EB7 /* libsm64.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B0C69F27F92083001A0EB7 /* libsm64.dylib */; };
+		83B0C79427F923E0001A0EB7 /* baserom.us.z64 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 83B0C6A427F920D9001A0EB7 /* baserom.us.z64 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83B0C79027F92363001A0EB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83B0C67927F904B1001A0EB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83B0C69E27F92083001A0EB7;
+			remoteInfo = sm64;
+		};
+		83F755CB27FA32E800BCEAD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83B0C67927F904B1001A0EB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83B0C69E27F92083001A0EB7;
+			remoteInfo = sm64;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83B0C78427F922E7001A0EB7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				83B0C79427F923E0001A0EB7 /* baserom.us.z64 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		83B0C68127F904B1001A0EB7 /* AugmentedMario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AugmentedMario.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B0C68427F904B1001A0EB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83B0C68627F904B1001A0EB7 /* CameraShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CameraShaders.metal; sourceTree = "<group>"; };
+		83B0C68927F904B1001A0EB7 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		83B0C68B27F904B1001A0EB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83B0C68E27F904B1001A0EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83B0C69027F904B2001A0EB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83B0C69327F904B2001A0EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83B0C69F27F92083001A0EB7 /* libsm64.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libsm64.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B0C6A427F920D9001A0EB7 /* baserom.us.z64 */ = {isa = PBXFileReference; lastKnownFileType = file; path = baserom.us.z64; sourceTree = "<group>"; };
+		83B0C6A627F920D9001A0EB7 /* level.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = level.c; sourceTree = "<group>"; };
+		83B0C6A727F920D9001A0EB7 /* ns_clock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ns_clock.h; sourceTree = "<group>"; };
+		83B0C6A827F920D9001A0EB7 /* context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = context.h; sourceTree = "<group>"; };
+		83B0C6A927F920D9001A0EB7 /* level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = level.h; sourceTree = "<group>"; };
+		83B0C6AA27F920D9001A0EB7 /* cglm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cglm.h; sourceTree = "<group>"; };
+		83B0C6AB27F920D9001A0EB7 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		83B0C6AC27F920D9001A0EB7 /* context.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = context.c; sourceTree = "<group>"; };
+		83B0C6B327F920D9001A0EB7 /* debug_print.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debug_print.h; sourceTree = "<group>"; };
+		83B0C6B427F920D9001A0EB7 /* load_anim_data.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = load_anim_data.c; sourceTree = "<group>"; };
+		83B0C6B527F920D9001A0EB7 /* gfx_adapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gfx_adapter.h; sourceTree = "<group>"; };
+		83B0C6B627F920D9001A0EB7 /* obj_pool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obj_pool.h; sourceTree = "<group>"; };
+		83B0C6B727F920D9001A0EB7 /* load_tex_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = load_tex_data.h; sourceTree = "<group>"; };
+		83B0C6B827F920D9001A0EB7 /* gfx_macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gfx_macros.h; sourceTree = "<group>"; };
+		83B0C6B927F920D9001A0EB7 /* gfx_adapter_commands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gfx_adapter_commands.h; sourceTree = "<group>"; };
+		83B0C6BA27F920D9001A0EB7 /* libsm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libsm64.h; sourceTree = "<group>"; };
+		83B0C6BB27F920D9001A0EB7 /* load_surfaces.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = load_surfaces.c; sourceTree = "<group>"; };
+		83B0C6BC27F920D9001A0EB7 /* obj_pool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = obj_pool.c; sourceTree = "<group>"; };
+		83B0C6BD27F920D9001A0EB7 /* gfx_adapter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gfx_adapter.c; sourceTree = "<group>"; };
+		83B0C6BE27F920D9001A0EB7 /* load_anim_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = load_anim_data.h; sourceTree = "<group>"; };
+		83B0C6BF27F920D9001A0EB7 /* debug_print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = debug_print.c; sourceTree = "<group>"; };
+		83B0C6C227F920D9001A0EB7 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		83B0C6C327F920D9001A0EB7 /* libmio0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libmio0.h; sourceTree = "<group>"; };
+		83B0C6C427F920D9001A0EB7 /* n64graphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = n64graphics.h; sourceTree = "<group>"; };
+		83B0C6C627F920D9001A0EB7 /* stb_image_write.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_write.h; sourceTree = "<group>"; };
+		83B0C6C727F920D9001A0EB7 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		83B0C6C827F920D9001A0EB7 /* utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
+		83B0C6C927F920D9001A0EB7 /* libmio0.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libmio0.c; sourceTree = "<group>"; };
+		83B0C6CA27F920D9001A0EB7 /* n64graphics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = n64graphics.c; sourceTree = "<group>"; };
+		83B0C6CB27F920D9001A0EB7 /* global_state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = global_state.h; sourceTree = "<group>"; };
+		83B0C6CC27F920D9001A0EB7 /* memory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memory.c; sourceTree = "<group>"; };
+		83B0C6CE27F920D9001A0EB7 /* command_macros_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = command_macros_base.h; sourceTree = "<group>"; };
+		83B0C6CF27F920D9001A0EB7 /* surface_terrains.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = surface_terrains.h; sourceTree = "<group>"; };
+		83B0C6D027F920D9001A0EB7 /* sm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sm64.h; sourceTree = "<group>"; };
+		83B0C6D127F920D9001A0EB7 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		83B0C6D227F920D9001A0EB7 /* mario_animation_ids.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mario_animation_ids.h; sourceTree = "<group>"; };
+		83B0C6D327F920D9001A0EB7 /* mario_geo_switch_case_ids.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mario_geo_switch_case_ids.h; sourceTree = "<group>"; };
+		83B0C6D427F920D9001A0EB7 /* audio_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audio_defines.h; sourceTree = "<group>"; };
+		83B0C6D527F920D9001A0EB7 /* level_misc_macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = level_misc_macros.h; sourceTree = "<group>"; };
+		83B0C6D627F920D9001A0EB7 /* platform_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform_info.h; sourceTree = "<group>"; };
+		83B0C6D827F920D9001A0EB7 /* os_cont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = os_cont.h; sourceTree = "<group>"; };
+		83B0C6D927F920D9001A0EB7 /* gbi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gbi.h; sourceTree = "<group>"; };
+		83B0C6DA27F920D9001A0EB7 /* ultratypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ultratypes.h; sourceTree = "<group>"; };
+		83B0C6DB27F920D9001A0EB7 /* special_preset_names.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = special_preset_names.h; sourceTree = "<group>"; };
+		83B0C6DC27F920D9001A0EB7 /* macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macros.h; sourceTree = "<group>"; };
+		83B0C6DD27F920D9001A0EB7 /* object_fields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = object_fields.h; sourceTree = "<group>"; };
+		83B0C6DE27F920D9001A0EB7 /* seq_ids.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seq_ids.h; sourceTree = "<group>"; };
+		83B0C6DF27F920D9001A0EB7 /* geo_commands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geo_commands.h; sourceTree = "<group>"; };
+		83B0C6E127F920D9001A0EB7 /* mario_actions_stationary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mario_actions_stationary.h; sourceTree = "<group>"; };
+		83B0C6E227F920D9001A0EB7 /* mario_actions_object.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mario_actions_object.c; sourceTree = "<group>"; };
+		83B0C6E327F920D9001A0EB7 /* mario_actions_moving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mario_actions_moving.h; sourceTree = "<group>"; };
+		83B0C6E427F920D9001A0EB7 /* rendering_graph_node.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rendering_graph_node.c; sourceTree = "<group>"; };
+		83B0C6E527F920D9001A0EB7 /* mario.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mario.c; sourceTree = "<group>"; };
+		83B0C6E627F920D9001A0EB7 /* mario_actions_automatic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mario_actions_automatic.h; sourceTree = "<group>"; };
+		83B0C6E727F920D9001A0EB7 /* interaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interaction.h; sourceTree = "<group>"; };
+		83B0C6E827F920D9001A0EB7 /* mario_actions_cutscene.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mario_actions_cutscene.c; sourceTree = "<group>"; };
+		83B0C6E927F920D9001A0EB7 /* mario_step.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mario_step.h; sourceTree = "<group>"; };
+		83B0C6EA27F920D9001A0EB7 /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
+		83B0C6EB27F920D9001A0EB7 /* mario_actions_submerged.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mario_actions_submerged.h; sourceTree = "<group>"; };
+		83B0C6EC27F920D9001A0EB7 /* mario_misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mario_misc.h; sourceTree = "<group>"; };
+		83B0C6ED27F920D9001A0EB7 /* behavior_actions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = behavior_actions.c; sourceTree = "<group>"; };
+		83B0C6EE27F920D9001A0EB7 /* area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = area.h; sourceTree = "<group>"; };
+		83B0C6EF27F920D9001A0EB7 /* mario_actions_airborne.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mario_actions_airborne.c; sourceTree = "<group>"; };
+		83B0C6F027F920D9001A0EB7 /* platform_displacement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform_displacement.h; sourceTree = "<group>"; };
+		83B0C6F127F920D9001A0EB7 /* object_stuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = object_stuff.h; sourceTree = "<group>"; };
+		83B0C6F227F920D9001A0EB7 /* mario_actions_moving.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mario_actions_moving.c; sourceTree = "<group>"; };
+		83B0C6F327F920D9001A0EB7 /* mario_actions_stationary.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mario_actions_stationary.c; sourceTree = "<group>"; };
+		83B0C6F427F920D9001A0EB7 /* mario_actions_object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mario_actions_object.h; sourceTree = "<group>"; };
+		83B0C6F527F920D9001A0EB7 /* level_update.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = level_update.h; sourceTree = "<group>"; };
+		83B0C6F627F920D9001A0EB7 /* mario_actions_automatic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mario_actions_automatic.c; sourceTree = "<group>"; };
+		83B0C6F727F920D9001A0EB7 /* mario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mario.h; sourceTree = "<group>"; };
+		83B0C6F827F920D9001A0EB7 /* rendering_graph_node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rendering_graph_node.h; sourceTree = "<group>"; };
+		83B0C6F927F920D9001A0EB7 /* save_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = save_file.h; sourceTree = "<group>"; };
+		83B0C6FA27F920D9001A0EB7 /* behavior_actions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = behavior_actions.h; sourceTree = "<group>"; };
+		83B0C6FB27F920D9001A0EB7 /* mario_misc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mario_misc.c; sourceTree = "<group>"; };
+		83B0C6FC27F920D9001A0EB7 /* mario_actions_submerged.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mario_actions_submerged.c; sourceTree = "<group>"; };
+		83B0C6FD27F920D9001A0EB7 /* interaction.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = interaction.c; sourceTree = "<group>"; };
+		83B0C6FE27F920D9001A0EB7 /* mario_step.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mario_step.c; sourceTree = "<group>"; };
+		83B0C6FF27F920D9001A0EB7 /* mario_actions_cutscene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mario_actions_cutscene.h; sourceTree = "<group>"; };
+		83B0C70027F920D9001A0EB7 /* platform_displacement.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = platform_displacement.c; sourceTree = "<group>"; };
+		83B0C70127F920D9001A0EB7 /* object_stuff.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = object_stuff.c; sourceTree = "<group>"; };
+		83B0C70227F920D9001A0EB7 /* mario_actions_airborne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mario_actions_airborne.h; sourceTree = "<group>"; };
+		83B0C70327F920D9001A0EB7 /* global_state.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = global_state.c; sourceTree = "<group>"; };
+		83B0C70427F920D9001A0EB7 /* memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memory.h; sourceTree = "<group>"; };
+		83B0C70627F920D9001A0EB7 /* model.inc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = model.inc.h; sourceTree = "<group>"; };
+		83B0C70727F920D9001A0EB7 /* geo.inc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = geo.inc.c; sourceTree = "<group>"; };
+		83B0C70827F920D9001A0EB7 /* model.inc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = model.inc.c; sourceTree = "<group>"; };
+		83B0C70927F920D9001A0EB7 /* geo.inc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geo.inc.h; sourceTree = "<group>"; };
+		83B0C70B27F920D9001A0EB7 /* guMtxF2L.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = guMtxF2L.c; sourceTree = "<group>"; };
+		83B0C70C27F920D9001A0EB7 /* math_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = math_util.c; sourceTree = "<group>"; };
+		83B0C70D27F920D9001A0EB7 /* geo_layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geo_layout.h; sourceTree = "<group>"; };
+		83B0C70E27F920D9001A0EB7 /* graph_node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = graph_node.h; sourceTree = "<group>"; };
+		83B0C70F27F920D9001A0EB7 /* surface_collision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = surface_collision.h; sourceTree = "<group>"; };
+		83B0C71027F920D9001A0EB7 /* math_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math_util.h; sourceTree = "<group>"; };
+		83B0C71127F920D9001A0EB7 /* guMtxF2L.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = guMtxF2L.h; sourceTree = "<group>"; };
+		83B0C71227F920D9001A0EB7 /* graph_node_manager.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = graph_node_manager.c; sourceTree = "<group>"; };
+		83B0C71327F920D9001A0EB7 /* surface_collision.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = surface_collision.c; sourceTree = "<group>"; };
+		83B0C71427F920D9001A0EB7 /* graph_node.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = graph_node.c; sourceTree = "<group>"; };
+		83B0C71527F920D9001A0EB7 /* geo_layout.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = geo_layout.c; sourceTree = "<group>"; };
+		83B0C71627F920D9001A0EB7 /* shim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shim.h; sourceTree = "<group>"; };
+		83B0C71727F920D9001A0EB7 /* load_tex_data.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = load_tex_data.c; sourceTree = "<group>"; };
+		83B0C71827F920D9001A0EB7 /* load_surfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = load_surfaces.h; sourceTree = "<group>"; };
+		83B0C71927F920D9001A0EB7 /* libsm64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libsm64.c; sourceTree = "<group>"; };
+		83B0C78627F922E7001A0EB7 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B0C79527F927F2001A0EB7 /* MarioShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MarioShaders.metal; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83B0C67E27F904B1001A0EB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B0C69D27F92083001A0EB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B0C78327F922E7001A0EB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B0C79327F9236B001A0EB7 /* libsm64.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83B0C67827F904B1001A0EB7 = {
+			isa = PBXGroup;
+			children = (
+				83B0C6A327F920D9001A0EB7 /* libsm64 */,
+				83B0C68327F904B1001A0EB7 /* AugmentedMario */,
+				83B0C68227F904B1001A0EB7 /* Products */,
+				83B0C79227F9236B001A0EB7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83B0C68227F904B1001A0EB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83B0C68127F904B1001A0EB7 /* AugmentedMario.app */,
+				83B0C69F27F92083001A0EB7 /* libsm64.dylib */,
+				83B0C78627F922E7001A0EB7 /* test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83B0C68327F904B1001A0EB7 /* AugmentedMario */ = {
+			isa = PBXGroup;
+			children = (
+				83B0C68427F904B1001A0EB7 /* AppDelegate.swift */,
+				83B0C68B27F904B1001A0EB7 /* ViewController.swift */,
+				83B0C68927F904B1001A0EB7 /* Renderer.swift */,
+				83B0C79527F927F2001A0EB7 /* MarioShaders.metal */,
+				83B0C68627F904B1001A0EB7 /* CameraShaders.metal */,
+				83B0C68D27F904B1001A0EB7 /* Main.storyboard */,
+				83B0C69027F904B2001A0EB7 /* Assets.xcassets */,
+				83B0C69227F904B2001A0EB7 /* LaunchScreen.storyboard */,
+			);
+			path = AugmentedMario;
+			sourceTree = "<group>";
+		};
+		83B0C6A327F920D9001A0EB7 /* libsm64 */ = {
+			isa = PBXGroup;
+			children = (
+				83B0C6A427F920D9001A0EB7 /* baserom.us.z64 */,
+				83B0C6A527F920D9001A0EB7 /* test */,
+				83B0C6B227F920D9001A0EB7 /* src */,
+			);
+			path = libsm64;
+			sourceTree = "<group>";
+		};
+		83B0C6A527F920D9001A0EB7 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				83B0C6AA27F920D9001A0EB7 /* cglm.h */,
+				83B0C6A827F920D9001A0EB7 /* context.h */,
+				83B0C6AC27F920D9001A0EB7 /* context.c */,
+				83B0C6A927F920D9001A0EB7 /* level.h */,
+				83B0C6A627F920D9001A0EB7 /* level.c */,
+				83B0C6AB27F920D9001A0EB7 /* main.c */,
+				83B0C6A727F920D9001A0EB7 /* ns_clock.h */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		83B0C6B227F920D9001A0EB7 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				83B0C6C027F920D9001A0EB7 /* decomp */,
+				83B0C6BA27F920D9001A0EB7 /* libsm64.h */,
+				83B0C71927F920D9001A0EB7 /* libsm64.c */,
+				83B0C6B327F920D9001A0EB7 /* debug_print.h */,
+				83B0C6BF27F920D9001A0EB7 /* debug_print.c */,
+				83B0C6B827F920D9001A0EB7 /* gfx_macros.h */,
+				83B0C6B927F920D9001A0EB7 /* gfx_adapter_commands.h */,
+				83B0C6B527F920D9001A0EB7 /* gfx_adapter.h */,
+				83B0C6BD27F920D9001A0EB7 /* gfx_adapter.c */,
+				83B0C6B627F920D9001A0EB7 /* obj_pool.h */,
+				83B0C6BC27F920D9001A0EB7 /* obj_pool.c */,
+				83B0C71827F920D9001A0EB7 /* load_surfaces.h */,
+				83B0C6BB27F920D9001A0EB7 /* load_surfaces.c */,
+				83B0C6BE27F920D9001A0EB7 /* load_anim_data.h */,
+				83B0C6B427F920D9001A0EB7 /* load_anim_data.c */,
+				83B0C6B727F920D9001A0EB7 /* load_tex_data.h */,
+				83B0C71727F920D9001A0EB7 /* load_tex_data.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		83B0C6C027F920D9001A0EB7 /* decomp */ = {
+			isa = PBXGroup;
+			children = (
+				83B0C6CD27F920D9001A0EB7 /* include */,
+				83B0C70A27F920D9001A0EB7 /* engine */,
+				83B0C6E027F920D9001A0EB7 /* game */,
+				83B0C70527F920D9001A0EB7 /* mario */,
+				83B0C6C127F920D9001A0EB7 /* tools */,
+				83B0C70327F920D9001A0EB7 /* global_state.c */,
+				83B0C6CB27F920D9001A0EB7 /* global_state.h */,
+				83B0C6CC27F920D9001A0EB7 /* memory.c */,
+				83B0C70427F920D9001A0EB7 /* memory.h */,
+				83B0C71627F920D9001A0EB7 /* shim.h */,
+			);
+			path = decomp;
+			sourceTree = "<group>";
+		};
+		83B0C6C127F920D9001A0EB7 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				83B0C6C227F920D9001A0EB7 /* utils.h */,
+				83B0C6C327F920D9001A0EB7 /* libmio0.h */,
+				83B0C6C427F920D9001A0EB7 /* n64graphics.h */,
+				83B0C6C527F920D9001A0EB7 /* stb */,
+				83B0C6C827F920D9001A0EB7 /* utils.c */,
+				83B0C6C927F920D9001A0EB7 /* libmio0.c */,
+				83B0C6CA27F920D9001A0EB7 /* n64graphics.c */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		83B0C6C527F920D9001A0EB7 /* stb */ = {
+			isa = PBXGroup;
+			children = (
+				83B0C6C627F920D9001A0EB7 /* stb_image_write.h */,
+				83B0C6C727F920D9001A0EB7 /* stb_image.h */,
+			);
+			path = stb;
+			sourceTree = "<group>";
+		};
+		83B0C6CD27F920D9001A0EB7 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				83B0C6D727F920D9001A0EB7 /* PR */,
+				83B0C6D427F920D9001A0EB7 /* audio_defines.h */,
+				83B0C6CE27F920D9001A0EB7 /* command_macros_base.h */,
+				83B0C6DF27F920D9001A0EB7 /* geo_commands.h */,
+				83B0C6D527F920D9001A0EB7 /* level_misc_macros.h */,
+				83B0C6DC27F920D9001A0EB7 /* macros.h */,
+				83B0C6D227F920D9001A0EB7 /* mario_animation_ids.h */,
+				83B0C6D327F920D9001A0EB7 /* mario_geo_switch_case_ids.h */,
+				83B0C6DD27F920D9001A0EB7 /* object_fields.h */,
+				83B0C6D627F920D9001A0EB7 /* platform_info.h */,
+				83B0C6DE27F920D9001A0EB7 /* seq_ids.h */,
+				83B0C6D027F920D9001A0EB7 /* sm64.h */,
+				83B0C6DB27F920D9001A0EB7 /* special_preset_names.h */,
+				83B0C6CF27F920D9001A0EB7 /* surface_terrains.h */,
+				83B0C6D127F920D9001A0EB7 /* types.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		83B0C6D727F920D9001A0EB7 /* PR */ = {
+			isa = PBXGroup;
+			children = (
+				83B0C6D827F920D9001A0EB7 /* os_cont.h */,
+				83B0C6D927F920D9001A0EB7 /* gbi.h */,
+				83B0C6DA27F920D9001A0EB7 /* ultratypes.h */,
+			);
+			path = PR;
+			sourceTree = "<group>";
+		};
+		83B0C6E027F920D9001A0EB7 /* game */ = {
+			isa = PBXGroup;
+			children = (
+				83B0C6EE27F920D9001A0EB7 /* area.h */,
+				83B0C6ED27F920D9001A0EB7 /* behavior_actions.c */,
+				83B0C6FA27F920D9001A0EB7 /* behavior_actions.h */,
+				83B0C6EA27F920D9001A0EB7 /* camera.h */,
+				83B0C6FD27F920D9001A0EB7 /* interaction.c */,
+				83B0C6E727F920D9001A0EB7 /* interaction.h */,
+				83B0C6F527F920D9001A0EB7 /* level_update.h */,
+				83B0C6EF27F920D9001A0EB7 /* mario_actions_airborne.c */,
+				83B0C70227F920D9001A0EB7 /* mario_actions_airborne.h */,
+				83B0C6F627F920D9001A0EB7 /* mario_actions_automatic.c */,
+				83B0C6E627F920D9001A0EB7 /* mario_actions_automatic.h */,
+				83B0C6E827F920D9001A0EB7 /* mario_actions_cutscene.c */,
+				83B0C6FF27F920D9001A0EB7 /* mario_actions_cutscene.h */,
+				83B0C6F227F920D9001A0EB7 /* mario_actions_moving.c */,
+				83B0C6E327F920D9001A0EB7 /* mario_actions_moving.h */,
+				83B0C6E227F920D9001A0EB7 /* mario_actions_object.c */,
+				83B0C6F427F920D9001A0EB7 /* mario_actions_object.h */,
+				83B0C6F327F920D9001A0EB7 /* mario_actions_stationary.c */,
+				83B0C6E127F920D9001A0EB7 /* mario_actions_stationary.h */,
+				83B0C6FC27F920D9001A0EB7 /* mario_actions_submerged.c */,
+				83B0C6EB27F920D9001A0EB7 /* mario_actions_submerged.h */,
+				83B0C6FB27F920D9001A0EB7 /* mario_misc.c */,
+				83B0C6EC27F920D9001A0EB7 /* mario_misc.h */,
+				83B0C6FE27F920D9001A0EB7 /* mario_step.c */,
+				83B0C6E927F920D9001A0EB7 /* mario_step.h */,
+				83B0C6E527F920D9001A0EB7 /* mario.c */,
+				83B0C6F727F920D9001A0EB7 /* mario.h */,
+				83B0C70127F920D9001A0EB7 /* object_stuff.c */,
+				83B0C6F127F920D9001A0EB7 /* object_stuff.h */,
+				83B0C70027F920D9001A0EB7 /* platform_displacement.c */,
+				83B0C6F027F920D9001A0EB7 /* platform_displacement.h */,
+				83B0C6E427F920D9001A0EB7 /* rendering_graph_node.c */,
+				83B0C6F827F920D9001A0EB7 /* rendering_graph_node.h */,
+				83B0C6F927F920D9001A0EB7 /* save_file.h */,
+			);
+			path = game;
+			sourceTree = "<group>";
+		};
+		83B0C70527F920D9001A0EB7 /* mario */ = {
+			isa = PBXGroup;
+			children = (
+				83B0C70927F920D9001A0EB7 /* geo.inc.h */,
+				83B0C70727F920D9001A0EB7 /* geo.inc.c */,
+				83B0C70627F920D9001A0EB7 /* model.inc.h */,
+				83B0C70827F920D9001A0EB7 /* model.inc.c */,
+			);
+			path = mario;
+			sourceTree = "<group>";
+		};
+		83B0C70A27F920D9001A0EB7 /* engine */ = {
+			isa = PBXGroup;
+			children = (
+				83B0C71527F920D9001A0EB7 /* geo_layout.c */,
+				83B0C70D27F920D9001A0EB7 /* geo_layout.h */,
+				83B0C71227F920D9001A0EB7 /* graph_node_manager.c */,
+				83B0C71427F920D9001A0EB7 /* graph_node.c */,
+				83B0C70E27F920D9001A0EB7 /* graph_node.h */,
+				83B0C70B27F920D9001A0EB7 /* guMtxF2L.c */,
+				83B0C71127F920D9001A0EB7 /* guMtxF2L.h */,
+				83B0C70C27F920D9001A0EB7 /* math_util.c */,
+				83B0C71027F920D9001A0EB7 /* math_util.h */,
+				83B0C71327F920D9001A0EB7 /* surface_collision.c */,
+				83B0C70F27F920D9001A0EB7 /* surface_collision.h */,
+			);
+			path = engine;
+			sourceTree = "<group>";
+		};
+		83B0C79227F9236B001A0EB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		83B0C69B27F92083001A0EB7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B0C77F27F920DA001A0EB7 /* load_surfaces.h in Headers */,
+				83B0C74227F920DA001A0EB7 /* os_cont.h in Headers */,
+				83B0C74A27F920DA001A0EB7 /* mario_actions_stationary.h in Headers */,
+				83B0C73D27F920DA001A0EB7 /* mario_animation_ids.h in Headers */,
+				83B0C74C27F920DA001A0EB7 /* mario_actions_moving.h in Headers */,
+				83B0C74527F920DA001A0EB7 /* special_preset_names.h in Headers */,
+				83B0C75227F920DA001A0EB7 /* mario_step.h in Headers */,
+				83B0C74627F920DA001A0EB7 /* macros.h in Headers */,
+				83B0C72827F920DA001A0EB7 /* gfx_adapter_commands.h in Headers */,
+				83B0C77427F920DA001A0EB7 /* geo_layout.h in Headers */,
+				83B0C77D27F920DA001A0EB7 /* shim.h in Headers */,
+				83B0C76327F920DA001A0EB7 /* behavior_actions.h in Headers */,
+				83B0C73727F920DA001A0EB7 /* global_state.h in Headers */,
+				83B0C71D27F920DA001A0EB7 /* level.h in Headers */,
+				83B0C72F27F920DA001A0EB7 /* utils.h in Headers */,
+				83B0C77627F920DA001A0EB7 /* surface_collision.h in Headers */,
+				83B0C73B27F920DA001A0EB7 /* sm64.h in Headers */,
+				83B0C73E27F920DA001A0EB7 /* mario_geo_switch_case_ids.h in Headers */,
+				83B0C77727F920DA001A0EB7 /* math_util.h in Headers */,
+				83B0C72727F920DA001A0EB7 /* gfx_macros.h in Headers */,
+				83B0C71C27F920DA001A0EB7 /* context.h in Headers */,
+				83B0C77827F920DA001A0EB7 /* guMtxF2L.h in Headers */,
+				83B0C73F27F920DA001A0EB7 /* audio_defines.h in Headers */,
+				83B0C76D27F920DA001A0EB7 /* memory.h in Headers */,
+				83B0C71B27F920DA001A0EB7 /* ns_clock.h in Headers */,
+				83B0C75D27F920DA001A0EB7 /* mario_actions_object.h in Headers */,
+				83B0C73C27F920DA001A0EB7 /* types.h in Headers */,
+				83B0C75327F920DA001A0EB7 /* camera.h in Headers */,
+				83B0C76127F920DA001A0EB7 /* rendering_graph_node.h in Headers */,
+				83B0C74F27F920DA001A0EB7 /* mario_actions_automatic.h in Headers */,
+				83B0C74127F920DA001A0EB7 /* platform_info.h in Headers */,
+				83B0C75727F920DA001A0EB7 /* area.h in Headers */,
+				83B0C74327F920DA001A0EB7 /* gbi.h in Headers */,
+				83B0C71E27F920DA001A0EB7 /* cglm.h in Headers */,
+				83B0C73027F920DA001A0EB7 /* libmio0.h in Headers */,
+				83B0C74827F920DA001A0EB7 /* seq_ids.h in Headers */,
+				83B0C74427F920DA001A0EB7 /* ultratypes.h in Headers */,
+				83B0C72927F920DA001A0EB7 /* libsm64.h in Headers */,
+				83B0C72D27F920DA001A0EB7 /* load_anim_data.h in Headers */,
+				83B0C74027F920DA001A0EB7 /* level_misc_macros.h in Headers */,
+				83B0C72427F920DA001A0EB7 /* gfx_adapter.h in Headers */,
+				83B0C76027F920DA001A0EB7 /* mario.h in Headers */,
+				83B0C74927F920DA001A0EB7 /* geo_commands.h in Headers */,
+				83B0C74727F920DA001A0EB7 /* object_fields.h in Headers */,
+				83B0C73A27F920DA001A0EB7 /* surface_terrains.h in Headers */,
+				83B0C75027F920DA001A0EB7 /* interaction.h in Headers */,
+				83B0C73127F920DA001A0EB7 /* n64graphics.h in Headers */,
+				83B0C76227F920DA001A0EB7 /* save_file.h in Headers */,
+				83B0C75A27F920DA001A0EB7 /* object_stuff.h in Headers */,
+				83B0C73227F920DA001A0EB7 /* stb_image_write.h in Headers */,
+				83B0C73327F920DA001A0EB7 /* stb_image.h in Headers */,
+				83B0C72527F920DA001A0EB7 /* obj_pool.h in Headers */,
+				83B0C75527F920DA001A0EB7 /* mario_misc.h in Headers */,
+				83B0C76827F920DA001A0EB7 /* mario_actions_cutscene.h in Headers */,
+				83B0C76B27F920DA001A0EB7 /* mario_actions_airborne.h in Headers */,
+				83B0C72627F920DA001A0EB7 /* load_tex_data.h in Headers */,
+				83B0C76E27F920DA001A0EB7 /* model.inc.h in Headers */,
+				83B0C72227F920DA001A0EB7 /* debug_print.h in Headers */,
+				83B0C75927F920DA001A0EB7 /* platform_displacement.h in Headers */,
+				83B0C75427F920DA001A0EB7 /* mario_actions_submerged.h in Headers */,
+				83B0C75E27F920DA001A0EB7 /* level_update.h in Headers */,
+				83B0C77127F920DA001A0EB7 /* geo.inc.h in Headers */,
+				83B0C73927F920DA001A0EB7 /* command_macros_base.h in Headers */,
+				83B0C77527F920DA001A0EB7 /* graph_node.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		83B0C68027F904B1001A0EB7 /* AugmentedMario */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83B0C69827F904B2001A0EB7 /* Build configuration list for PBXNativeTarget "AugmentedMario" */;
+			buildPhases = (
+				83B0C67D27F904B1001A0EB7 /* Sources */,
+				83B0C67E27F904B1001A0EB7 /* Frameworks */,
+				83B0C67F27F904B1001A0EB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83F755CC27FA32E800BCEAD3 /* PBXTargetDependency */,
+			);
+			name = AugmentedMario;
+			productName = AugmentedMario;
+			productReference = 83B0C68127F904B1001A0EB7 /* AugmentedMario.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83B0C69E27F92083001A0EB7 /* sm64 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83B0C6A027F92083001A0EB7 /* Build configuration list for PBXNativeTarget "sm64" */;
+			buildPhases = (
+				830D4C3327FA29EC00E29912 /* ShellScript */,
+				83B0C69B27F92083001A0EB7 /* Headers */,
+				83B0C69C27F92083001A0EB7 /* Sources */,
+				83B0C69D27F92083001A0EB7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sm64;
+			productName = sm64;
+			productReference = 83B0C69F27F92083001A0EB7 /* libsm64.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		83B0C78527F922E7001A0EB7 /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83B0C78A27F922E7001A0EB7 /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				837FC1D727FA2FDB006A2C6B /* ShellScript */,
+				83B0C78227F922E7001A0EB7 /* Sources */,
+				83B0C78327F922E7001A0EB7 /* Frameworks */,
+				83B0C78427F922E7001A0EB7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83B0C79127F92363001A0EB7 /* PBXTargetDependency */,
+			);
+			name = test;
+			productName = test;
+			productReference = 83B0C78627F922E7001A0EB7 /* test */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83B0C67927F904B1001A0EB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					83B0C68027F904B1001A0EB7 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					83B0C69E27F92083001A0EB7 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					83B0C78527F922E7001A0EB7 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 83B0C67C27F904B1001A0EB7 /* Build configuration list for PBXProject "AugmentedMario" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83B0C67827F904B1001A0EB7;
+			productRefGroup = 83B0C68227F904B1001A0EB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83B0C68027F904B1001A0EB7 /* AugmentedMario */,
+				83B0C69E27F92083001A0EB7 /* sm64 */,
+				83B0C78527F922E7001A0EB7 /* test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83B0C67F27F904B1001A0EB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B0C69427F904B2001A0EB7 /* LaunchScreen.storyboard in Resources */,
+				83B0C69127F904B2001A0EB7 /* Assets.xcassets in Resources */,
+				83B0C68F27F904B1001A0EB7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		830D4C3327FA29EC00E29912 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "cd libsm64\nFILE=src/decomp/mario/geo.inc.c\nif ! test -f \"$FILE\"; then\n    echo \"Mario geometry file does not exist.\"\n    python3 import-mario-geo.py\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		837FC1D727FA2FDB006A2C6B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "cd libsm64\nFILE=\"test/level.c\"\nif ! test -f \"$FILE\"; then\n    echo \"Test level geometry file does not exist.\"\n    python3 import-test-collision.py\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83B0C67D27F904B1001A0EB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830D4C3227FA1F4200E29912 /* MarioShaders.metal in Sources */,
+				83B0C68727F904B1001A0EB7 /* CameraShaders.metal in Sources */,
+				83B0C68A27F904B1001A0EB7 /* Renderer.swift in Sources */,
+				83B0C68C27F904B1001A0EB7 /* ViewController.swift in Sources */,
+				83B0C68527F904B1001A0EB7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B0C69C27F92083001A0EB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B0C76C27F920DA001A0EB7 /* global_state.c in Sources */,
+				83B0C75F27F920DA001A0EB7 /* mario_actions_automatic.c in Sources */,
+				83B0C77927F920DA001A0EB7 /* graph_node_manager.c in Sources */,
+				83B0C74E27F920DA001A0EB7 /* mario.c in Sources */,
+				83B0C77B27F920DA001A0EB7 /* graph_node.c in Sources */,
+				83B0C77327F920DA001A0EB7 /* math_util.c in Sources */,
+				83B0C75B27F920DA001A0EB7 /* mario_actions_moving.c in Sources */,
+				83B0C74B27F920DA001A0EB7 /* mario_actions_object.c in Sources */,
+				83B0C72A27F920DA001A0EB7 /* load_surfaces.c in Sources */,
+				83B0C76F27F920DA001A0EB7 /* geo.inc.c in Sources */,
+				83B0C76527F920DA001A0EB7 /* mario_actions_submerged.c in Sources */,
+				83B0C78127F922B5001A0EB7 /* n64graphics.c in Sources */,
+				83B0C75627F920DA001A0EB7 /* behavior_actions.c in Sources */,
+				83B0C72C27F920DA001A0EB7 /* gfx_adapter.c in Sources */,
+				83B0C73427F920DA001A0EB7 /* utils.c in Sources */,
+				83B0C77E27F920DA001A0EB7 /* load_tex_data.c in Sources */,
+				83B0C76927F920DA001A0EB7 /* platform_displacement.c in Sources */,
+				83B0C72E27F920DA001A0EB7 /* debug_print.c in Sources */,
+				83B0C78027F920DA001A0EB7 /* libsm64.c in Sources */,
+				83B0C72B27F920DA001A0EB7 /* obj_pool.c in Sources */,
+				83B0C75827F920DA001A0EB7 /* mario_actions_airborne.c in Sources */,
+				83B0C75127F920DA001A0EB7 /* mario_actions_cutscene.c in Sources */,
+				83B0C73527F920DA001A0EB7 /* libmio0.c in Sources */,
+				83B0C77C27F920DA001A0EB7 /* geo_layout.c in Sources */,
+				83B0C77227F920DA001A0EB7 /* guMtxF2L.c in Sources */,
+				83B0C77A27F920DA001A0EB7 /* surface_collision.c in Sources */,
+				83B0C75C27F920DA001A0EB7 /* mario_actions_stationary.c in Sources */,
+				83B0C74D27F920DA001A0EB7 /* rendering_graph_node.c in Sources */,
+				83B0C73827F920DA001A0EB7 /* memory.c in Sources */,
+				83B0C76727F920DA001A0EB7 /* mario_step.c in Sources */,
+				83B0C72327F920DA001A0EB7 /* load_anim_data.c in Sources */,
+				83B0C76627F920DA001A0EB7 /* interaction.c in Sources */,
+				83B0C76A27F920DA001A0EB7 /* object_stuff.c in Sources */,
+				83B0C77027F920DA001A0EB7 /* model.inc.c in Sources */,
+				83B0C76427F920DA001A0EB7 /* mario_misc.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B0C78227F922E7001A0EB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B0C78F27F922EF001A0EB7 /* level.c in Sources */,
+				83B0C78E27F922EF001A0EB7 /* context.c in Sources */,
+				83B0C78D27F922EF001A0EB7 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83B0C79127F92363001A0EB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83B0C69E27F92083001A0EB7 /* sm64 */;
+			targetProxy = 83B0C79027F92363001A0EB7 /* PBXContainerItemProxy */;
+		};
+		83F755CC27FA32E800BCEAD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83B0C69E27F92083001A0EB7 /* sm64 */;
+			targetProxy = 83F755CB27FA32E800BCEAD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		83B0C68D27F904B1001A0EB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83B0C68E27F904B1001A0EB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83B0C69227F904B2001A0EB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83B0C69327F904B2001A0EB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83B0C69627F904B2001A0EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83B0C69727F904B2001A0EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83B0C69927F904B2001A0EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G784MNW7L7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "arkit metal";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.fourspace.AugmentedMario;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83B0C69A27F904B2001A0EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G784MNW7L7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "arkit metal";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.fourspace.AugmentedMario;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		83B0C6A127F92083001A0EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G784MNW7L7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					GL_SILENCE_DEPRECATION,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				HEADER_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
+				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		83B0C6A227F92083001A0EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G784MNW7L7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = GL_SILENCE_DEPRECATION;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				HEADER_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
+				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		83B0C78B27F922E7001A0EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G784MNW7L7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					GL_SILENCE_DEPRECATION,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				HEADER_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
+				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				OTHER_LDFLAGS = "-lSDL2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		83B0C78C27F922E7001A0EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G784MNW7L7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = GL_SILENCE_DEPRECATION;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				HEADER_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
+				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				OTHER_LDFLAGS = "-lSDL2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83B0C67C27F904B1001A0EB7 /* Build configuration list for PBXProject "AugmentedMario" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B0C69627F904B2001A0EB7 /* Debug */,
+				83B0C69727F904B2001A0EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83B0C69827F904B2001A0EB7 /* Build configuration list for PBXNativeTarget "AugmentedMario" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B0C69927F904B2001A0EB7 /* Debug */,
+				83B0C69A27F904B2001A0EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83B0C6A027F92083001A0EB7 /* Build configuration list for PBXNativeTarget "sm64" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B0C6A127F92083001A0EB7 /* Debug */,
+				83B0C6A227F92083001A0EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83B0C78A27F922E7001A0EB7 /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B0C78B27F922E7001A0EB7 /* Debug */,
+				83B0C78C27F922E7001A0EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83B0C67927F904B1001A0EB7 /* Project object */;
+}
