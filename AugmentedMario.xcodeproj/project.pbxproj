@@ -10,14 +10,13 @@
 		830D4C3227FA1F4200E29912 /* MarioShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C79527F927F2001A0EB7 /* MarioShaders.metal */; };
 		83613EF927FA3A6000C7948B /* SuperMarioWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83613EF827FA3A6000C7948B /* SuperMarioWorld.swift */; };
 		83613EFD27FA44A100C7948B /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83613EFC27FA44A100C7948B /* Math.swift */; };
-		83613EFE27FA539F00C7948B /* level.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6A627F920D9001A0EB7 /* level.c */; };
-		83613F0027FA55DA00C7948B /* Bridge.c in Sources */ = {isa = PBXBuildFile; fileRef = 83613EFF27FA55DA00C7948B /* Bridge.c */; };
 		83613F0127FA57A700C7948B /* libsm64.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B0C69F27F92083001A0EB7 /* libsm64.dylib */; };
 		83613F0227FA57E900C7948B /* libsm64.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 83B0C69F27F92083001A0EB7 /* libsm64.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		83613F0427FA584D00C7948B /* baserom.us.z64 in Resources */ = {isa = PBXBuildFile; fileRef = 83B0C6A427F920D9001A0EB7 /* baserom.us.z64 */; };
+		838B4E2E27FB6EB4004AA46A /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838B4E2D27FB6EB4004AA46A /* GameController.swift */; };
 		83B0C68527F904B1001A0EB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C68427F904B1001A0EB7 /* AppDelegate.swift */; };
 		83B0C68727F904B1001A0EB7 /* CameraShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C68627F904B1001A0EB7 /* CameraShaders.metal */; };
-		83B0C68A27F904B1001A0EB7 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C68927F904B1001A0EB7 /* Renderer.swift */; };
+		83B0C68A27F904B1001A0EB7 /* ARFrameRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C68927F904B1001A0EB7 /* ARFrameRenderer.swift */; };
 		83B0C68C27F904B1001A0EB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C68B27F904B1001A0EB7 /* ViewController.swift */; };
 		83B0C68F27F904B1001A0EB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83B0C68D27F904B1001A0EB7 /* Main.storyboard */; };
 		83B0C69127F904B2001A0EB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B0C69027F904B2001A0EB7 /* Assets.xcassets */; };
@@ -173,11 +172,11 @@
 		83613EF827FA3A6000C7948B /* SuperMarioWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMarioWorld.swift; sourceTree = "<group>"; };
 		83613EFA27FA3B9C00C7948B /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
 		83613EFC27FA44A100C7948B /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
-		83613EFF27FA55DA00C7948B /* Bridge.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Bridge.c; sourceTree = "<group>"; };
+		838B4E2D27FB6EB4004AA46A /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		83B0C68127F904B1001A0EB7 /* AugmentedMario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AugmentedMario.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B0C68427F904B1001A0EB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83B0C68627F904B1001A0EB7 /* CameraShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CameraShaders.metal; sourceTree = "<group>"; };
-		83B0C68927F904B1001A0EB7 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		83B0C68927F904B1001A0EB7 /* ARFrameRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFrameRenderer.swift; sourceTree = "<group>"; };
 		83B0C68B27F904B1001A0EB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		83B0C68E27F904B1001A0EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83B0C69027F904B2001A0EB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -342,11 +341,11 @@
 			children = (
 				83B0C68427F904B1001A0EB7 /* AppDelegate.swift */,
 				83B0C68B27F904B1001A0EB7 /* ViewController.swift */,
-				83B0C68927F904B1001A0EB7 /* Renderer.swift */,
+				838B4E2D27FB6EB4004AA46A /* GameController.swift */,
+				83B0C68927F904B1001A0EB7 /* ARFrameRenderer.swift */,
 				83613EF827FA3A6000C7948B /* SuperMarioWorld.swift */,
 				83613EFC27FA44A100C7948B /* Math.swift */,
 				83613EFA27FA3B9C00C7948B /* Bridge.h */,
-				83613EFF27FA55DA00C7948B /* Bridge.c */,
 				83B0C79527F927F2001A0EB7 /* MarioShaders.metal */,
 				83B0C68627F904B1001A0EB7 /* CameraShaders.metal */,
 				83B0C68D27F904B1001A0EB7 /* Main.storyboard */,
@@ -788,12 +787,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83613EFE27FA539F00C7948B /* level.c in Sources */,
+				838B4E2E27FB6EB4004AA46A /* GameController.swift in Sources */,
 				830D4C3227FA1F4200E29912 /* MarioShaders.metal in Sources */,
 				83B0C68727F904B1001A0EB7 /* CameraShaders.metal in Sources */,
-				83B0C68A27F904B1001A0EB7 /* Renderer.swift in Sources */,
+				83B0C68A27F904B1001A0EB7 /* ARFrameRenderer.swift in Sources */,
 				83613EFD27FA44A100C7948B /* Math.swift in Sources */,
-				83613F0027FA55DA00C7948B /* Bridge.c in Sources */,
 				83B0C68C27F904B1001A0EB7 /* ViewController.swift in Sources */,
 				83613EF927FA3A6000C7948B /* SuperMarioWorld.swift in Sources */,
 				83B0C68527F904B1001A0EB7 /* AppDelegate.swift in Sources */,
@@ -1030,7 +1028,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = AugmentedMario/Bridge.h;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

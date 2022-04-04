@@ -5,34 +5,44 @@ import MetalKit
 import ARKit
 
 class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
-    
+    var device: MTLDevice!
+    var commandQueue: MTLCommandQueue!
     var session: ARSession!
-    var renderer: Renderer!
+
+    private var frameRenderer: ARFrameRenderer!
+    private var gameController: GameWorldController!
+
+    var mtkView: MTKView {
+        return self.view as! MTKView
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        device = MTLCreateSystemDefaultDevice()!
+        commandQueue = device.makeCommandQueue()!
+
         session = ARSession()
         session.delegate = self
 
-        if let view = self.view as? MTKView {
-            view.device = MTLCreateSystemDefaultDevice()
-            view.backgroundColor = UIColor.clear
-            view.delegate = self
-            
-            guard view.device != nil else {
-                print("Metal is not supported on this device")
-                return
-            }
+        mtkView.device = device
+        mtkView.colorPixelFormat = .bgra8Unorm
+        mtkView.depthStencilPixelFormat = .depth32Float
+        mtkView.sampleCount = 1
+        mtkView.delegate = self
 
-            renderer = Renderer(session: session, metalDevice: view.device!, renderDestination: view)
-        }
+        frameRenderer = ARFrameRenderer(device: device, view: mtkView)
+        gameController = GameWorldController(device: device, view: mtkView)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         let configuration = ARWorldTrackingConfiguration()
+        //configuration.sceneReconstruction = .mesh
+        //configuration.environmentTexturing = .automatic
+        //configuration.frameSemantics = .sceneDepth
+        configuration.planeDetection = .horizontal
 
         session.run(configuration)
     }
@@ -49,10 +59,24 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
     }
     
     func draw(in view: MTKView) {
-        renderer.update()
+        let time = CACurrentMediaTime()
+
+        if let frame = session.currentFrame {
+            gameController.update(at: time, frame: frame)
+        }
+
+        guard let renderPassDescriptor = view.currentRenderPassDescriptor else { return }
+        let commandBuffer = commandQueue.makeCommandBuffer()!
+        if let renderCommandEncoder = commandBuffer.makeRenderCommandEncoder(descriptor: renderPassDescriptor) {
+            frameRenderer.draw(renderCommandEncoder: renderCommandEncoder, commandBuffer: commandBuffer)
+            gameController.draw(renderCommandEncoder: renderCommandEncoder, commandBuffer: commandBuffer)
+            renderCommandEncoder.endEncoding()
+        }
+        commandBuffer.present(view.currentDrawable!)
+        commandBuffer.commit()
     }
     
-    // MARK: - ARSessionDelegate
+    // MARK: - ARSessionObserver
     
     func session(_ session: ARSession, didFailWithError error: Error) {
     }
@@ -62,4 +86,19 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
     
     func sessionInterruptionEnded(_ session: ARSession) {
     }
+
+    // MARK: - ARSessionDelegate
+
+    func session(_ session: ARSession, didUpdate frame: ARFrame) {
+        frameRenderer.update(frame: frame)
+    }
+
+    //func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
+    //}
+
+    //func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
+    //}
+
+    //func session(_ session: ARSession, didRemove anchors: [ARAnchor]) {
+    //}
 }

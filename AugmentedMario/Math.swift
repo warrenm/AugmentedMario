@@ -45,3 +45,9 @@ extension SIMD3 {
         self.init(v.0, v.1, v.2)
     }
 }
+
+extension SIMD4 {
+    var xyz: SIMD3<Scalar> {
+        return SIMD3<Scalar>(x, y, z)
+    }
+}
