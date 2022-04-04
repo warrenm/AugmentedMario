@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		830D4C3227FA1F4200E29912 /* MarioShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C79527F927F2001A0EB7 /* MarioShaders.metal */; };
-		83613EF927FA3A6000C7948B /* Mario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83613EF827FA3A6000C7948B /* Mario.swift */; };
+		83613EF927FA3A6000C7948B /* SuperMarioWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83613EF827FA3A6000C7948B /* SuperMarioWorld.swift */; };
 		83613EFD27FA44A100C7948B /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83613EFC27FA44A100C7948B /* Math.swift */; };
 		83613EFE27FA539F00C7948B /* level.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6A627F920D9001A0EB7 /* level.c */; };
 		83613F0027FA55DA00C7948B /* Bridge.c in Sources */ = {isa = PBXBuildFile; fileRef = 83613EFF27FA55DA00C7948B /* Bridge.c */; };
@@ -170,7 +170,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		83613EF827FA3A6000C7948B /* Mario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mario.swift; sourceTree = "<group>"; };
+		83613EF827FA3A6000C7948B /* SuperMarioWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMarioWorld.swift; sourceTree = "<group>"; };
 		83613EFA27FA3B9C00C7948B /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
 		83613EFC27FA44A100C7948B /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		83613EFF27FA55DA00C7948B /* Bridge.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Bridge.c; sourceTree = "<group>"; };
@@ -343,7 +343,7 @@
 				83B0C68427F904B1001A0EB7 /* AppDelegate.swift */,
 				83B0C68B27F904B1001A0EB7 /* ViewController.swift */,
 				83B0C68927F904B1001A0EB7 /* Renderer.swift */,
-				83613EF827FA3A6000C7948B /* Mario.swift */,
+				83613EF827FA3A6000C7948B /* SuperMarioWorld.swift */,
 				83613EFC27FA44A100C7948B /* Math.swift */,
 				83613EFA27FA3B9C00C7948B /* Bridge.h */,
 				83613EFF27FA55DA00C7948B /* Bridge.c */,
@@ -795,7 +795,7 @@
 				83613EFD27FA44A100C7948B /* Math.swift in Sources */,
 				83613F0027FA55DA00C7948B /* Bridge.c in Sources */,
 				83B0C68C27F904B1001A0EB7 /* ViewController.swift in Sources */,
-				83613EF927FA3A6000C7948B /* Mario.swift in Sources */,
+				83613EF927FA3A6000C7948B /* SuperMarioWorld.swift in Sources */,
 				83B0C68527F904B1001A0EB7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
