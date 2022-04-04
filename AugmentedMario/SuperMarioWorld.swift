@@ -32,6 +32,17 @@ class SuperMarioWorld {
     private var virtualController: GCVirtualController!
     private var controller: GCController?
 
+    struct WorldUniforms {
+        var model: simd_float4x4
+        var view: simd_float4x4
+        var projection: simd_float4x4
+    }
+
+    struct MarioUniforms {
+        var view: simd_float4x4
+        var projection: simd_float4x4
+    }
+
     init(_ device: MTLDevice) {
         self.device = device
 
@@ -68,7 +79,10 @@ class SuperMarioWorld {
 
     deinit {
         sm64_global_terminate()
-        // TODO: Deallocate sm64 geometry buffers
+        marioGeometry.position.deallocate()
+        marioGeometry.color.deallocate()
+        marioGeometry.normal.deallocate()
+        marioGeometry.uv.deallocate()
     }
 
     func update(at time: TimeInterval)
@@ -107,26 +121,17 @@ class SuperMarioWorld {
                                       from: cameraPos,
                                       up: SIMD3<Float>(0, 1, 0)).inverse
         let aspectRatio = Float(viewport.width / viewport.height)
-        let projection = simd_float4x4(perspectiveProjectionFOV: 65.0,
+        let projection = simd_float4x4(perspectiveProjectionFOV: 35.0,
                                        aspectRatio: aspectRatio,
                                        nearZ: 100.0,
                                        farZ: 20000.0)
 
-        struct WorldUniforms {
-            var model: simd_float4x4
-            var view: simd_float4x4
-            var projection: simd_float4x4
-        }
         var worldUniforms = WorldUniforms(model: model, view: view, projection: projection)
         renderCommandEncoder.setRenderPipelineState(worldRenderPipelineState)
         renderCommandEncoder.setVertexBuffer(collisionMesh.vertexBuffer, offset: 0, index: 0)
         renderCommandEncoder.setVertexBytes(&worldUniforms, length: MemoryLayout<WorldUniforms>.size, index: 1)
         renderCommandEncoder.drawPrimitives(type: .triangle, vertexStart: 0, vertexCount: collisionMesh.vertexCount)
 
-        struct MarioUniforms {
-            var view: simd_float4x4
-            var projection: simd_float4x4
-        }
         var marioUniforms = MarioUniforms(view: view, projection: projection)
         renderCommandEncoder.setRenderPipelineState(marioRenderPipelineState)
         renderCommandEncoder.setVertexBuffer(marioMesh.vertexBuffer, offset: 0, index: 0)
