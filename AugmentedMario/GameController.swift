@@ -10,7 +10,7 @@ class GameWorldController {
     let device: MTLDevice
     let view: MTKView!
 
-    private var virtualController: GCVirtualController!
+    private var virtualController: Any? /*GCVirtualController*/
     private var controller: GCController?
     private var lastMarioTick: TimeInterval = 0.0
     private var marioWorld: SuperMarioWorld
@@ -21,7 +21,20 @@ class GameWorldController {
         self.view = view
         marioWorld = SuperMarioWorld(device)
 
-        connectVirtualController()
+        NotificationCenter.default.addObserver(self, selector: #selector(controllerDidConnect(_:)),
+                                               name: NSNotification.Name.GCControllerDidConnect, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(controllerDidDisconnect(_:)),
+                                               name: NSNotification.Name.GCControllerDidDisconnect, object: nil)
+        if #available(iOS 15.0, *) {
+            connectVirtualController()
+        }
+    }
+
+    deinit {
+        NotificationCenter.default.removeObserver(self,
+                                                  name: NSNotification.Name.GCControllerDidConnect, object: nil)
+        NotificationCenter.default.removeObserver(self,
+                                                  name: NSNotification.Name.GCControllerDidDisconnect, object: nil)
     }
 
     func update(at time: TimeInterval, frame: ARFrame) {
@@ -53,12 +66,8 @@ class GameWorldController {
         marioWorld.draw(renderCommandEncoder: renderCommandEncoder)
     }
 
+    @available(iOS 15.0, *)
     private func connectVirtualController() {
-        NotificationCenter.default.addObserver(self, selector: #selector(controllerDidConnect(_:)),
-                                               name: NSNotification.Name.GCControllerDidConnect, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(controllerDidDisconnect(_:)),
-                                               name: NSNotification.Name.GCControllerDidDisconnect, object: nil)
-
         let controllerConfig = GCVirtualController.Configuration()
         controllerConfig.elements = [
             GCInputLeftThumbstick,
@@ -66,18 +75,15 @@ class GameWorldController {
             GCInputButtonB,
             GCInputRightTrigger
         ]
-        virtualController = GCVirtualController(configuration: controllerConfig)
+        let virtualController = GCVirtualController(configuration: controllerConfig)
         virtualController.connect()
+        self.virtualController = virtualController
     }
 
+    @available(iOS 15.0, *)
     private func disconnectVirtualController() {
-        virtualController.disconnect()
+        (virtualController as? GCVirtualController)?.disconnect()
         virtualController = nil
-
-        NotificationCenter.default.removeObserver(self,
-                                                  name: NSNotification.Name.GCControllerDidConnect, object: nil)
-        NotificationCenter.default.removeObserver(self,
-                                                  name: NSNotification.Name.GCControllerDidDisconnect, object: nil)
     }
 
     private func pollControllerInputs() {
