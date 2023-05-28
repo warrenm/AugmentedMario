@@ -120,21 +120,9 @@
 		83B0C77F27F920DA001A0EB7 /* load_surfaces.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B0C71827F920D9001A0EB7 /* load_surfaces.h */; };
 		83B0C78027F920DA001A0EB7 /* libsm64.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C71927F920D9001A0EB7 /* libsm64.c */; };
 		83B0C78127F922B5001A0EB7 /* n64graphics.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6CA27F920D9001A0EB7 /* n64graphics.c */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
-		83B0C78D27F922EF001A0EB7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6AB27F920D9001A0EB7 /* main.c */; };
-		83B0C78E27F922EF001A0EB7 /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6AC27F920D9001A0EB7 /* context.c */; };
-		83B0C78F27F922EF001A0EB7 /* level.c in Sources */ = {isa = PBXBuildFile; fileRef = 83B0C6A627F920D9001A0EB7 /* level.c */; };
-		83B0C79327F9236B001A0EB7 /* libsm64.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B0C69F27F92083001A0EB7 /* libsm64.dylib */; };
-		83B0C79427F923E0001A0EB7 /* baserom.us.z64 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 83B0C6A427F920D9001A0EB7 /* baserom.us.z64 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		83B0C79027F92363001A0EB7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83B0C67927F904B1001A0EB7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 83B0C69E27F92083001A0EB7;
-			remoteInfo = sm64;
-		};
 		83F755CB27FA32E800BCEAD3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83B0C67927F904B1001A0EB7 /* Project object */;
@@ -154,16 +142,6 @@
 				83613F0227FA57E900C7948B /* libsm64.dylib in Embed Libraries */,
 			);
 			name = "Embed Libraries";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		83B0C78427F922E7001A0EB7 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = "";
-			dstSubfolderSpec = 16;
-			files = (
-				83B0C79427F923E0001A0EB7 /* baserom.us.z64 in CopyFiles */,
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -285,7 +263,6 @@
 		83B0C71727F920D9001A0EB7 /* load_tex_data.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = load_tex_data.c; sourceTree = "<group>"; };
 		83B0C71827F920D9001A0EB7 /* load_surfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = load_surfaces.h; sourceTree = "<group>"; };
 		83B0C71927F920D9001A0EB7 /* libsm64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libsm64.c; sourceTree = "<group>"; };
-		83B0C78627F922E7001A0EB7 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B0C79527F927F2001A0EB7 /* MarioShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MarioShaders.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -302,14 +279,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		83B0C78327F922E7001A0EB7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83B0C79327F9236B001A0EB7 /* libsm64.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +300,6 @@
 			children = (
 				83B0C68127F904B1001A0EB7 /* AugmentedMario.app */,
 				83B0C69F27F92083001A0EB7 /* libsm64.dylib */,
-				83B0C78627F922E7001A0EB7 /* test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -666,25 +634,6 @@
 			productReference = 83B0C69F27F92083001A0EB7 /* libsm64.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
-		83B0C78527F922E7001A0EB7 /* test */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 83B0C78A27F922E7001A0EB7 /* Build configuration list for PBXNativeTarget "test" */;
-			buildPhases = (
-				837FC1D727FA2FDB006A2C6B /* ShellScript */,
-				83B0C78227F922E7001A0EB7 /* Sources */,
-				83B0C78327F922E7001A0EB7 /* Frameworks */,
-				83B0C78427F922E7001A0EB7 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				83B0C79127F92363001A0EB7 /* PBXTargetDependency */,
-			);
-			name = test;
-			productName = test;
-			productReference = 83B0C78627F922E7001A0EB7 /* test */;
-			productType = "com.apple.product-type.tool";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -693,16 +642,13 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					83B0C68027F904B1001A0EB7 = {
 						CreatedOnToolsVersion = 13.3;
 						LastSwiftMigration = 1330;
 					};
 					83B0C69E27F92083001A0EB7 = {
-						CreatedOnToolsVersion = 13.3;
-					};
-					83B0C78527F922E7001A0EB7 = {
 						CreatedOnToolsVersion = 13.3;
 					};
 				};
@@ -722,7 +668,6 @@
 			targets = (
 				83B0C68027F904B1001A0EB7 /* AugmentedMario */,
 				83B0C69E27F92083001A0EB7 /* sm64 */,
-				83B0C78527F922E7001A0EB7 /* test */,
 			);
 		};
 /* End PBXProject section */
@@ -759,25 +704,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
 			shellScript = "cd libsm64\nFILE=src/decomp/mario/geo.inc.c\nif ! test -f \"$FILE\"; then\n    echo \"Mario geometry file does not exist.\"\n    python3 import-mario-geo.py\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		837FC1D727FA2FDB006A2C6B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/bash;
-			shellScript = "cd libsm64\nFILE=\"test/level.c\"\nif ! test -f \"$FILE\"; then\n    echo \"Test level geometry file does not exist.\"\n    python3 import-test-collision.py\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -840,24 +766,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83B0C78227F922E7001A0EB7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83B0C78F27F922EF001A0EB7 /* level.c in Sources */,
-				83B0C78E27F922EF001A0EB7 /* context.c in Sources */,
-				83B0C78D27F922EF001A0EB7 /* main.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		83B0C79127F92363001A0EB7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 83B0C69E27F92083001A0EB7 /* sm64 */;
-			targetProxy = 83B0C79027F92363001A0EB7 /* PBXContainerItemProxy */;
-		};
 		83F755CC27FA32E800BCEAD3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 83B0C69E27F92083001A0EB7 /* sm64 */;
@@ -1009,7 +920,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G784MNW7L7;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1018,7 +929,8 @@
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "arkit metal";
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1041,7 +953,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G784MNW7L7;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1050,7 +962,8 @@
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "arkit metal";
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1068,8 +981,7 @@
 		83B0C6A127F92083001A0EB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G784MNW7L7;
+				DEAD_CODE_STRIPPING = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
@@ -1080,9 +992,9 @@
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_UNINITIALIZED_AUTOS = NO;
-				HEADER_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
+				HEADER_SEARCH_PATHS = "/opt/homebrew/Cellar/sdl2/**";
 				INSTALL_PATH = "@rpath";
-				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
+				LIBRARY_SEARCH_PATHS = "/opt/homebrew/Cellar/sdl2/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1094,60 +1006,21 @@
 		83B0C6A227F92083001A0EB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G784MNW7L7;
+				DEAD_CODE_STRIPPING = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
 				GCC_PREPROCESSOR_DEFINITIONS = GL_SILENCE_DEPRECATION;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_UNINITIALIZED_AUTOS = NO;
-				HEADER_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
+				HEADER_SEARCH_PATHS = "/opt/homebrew/Cellar/sdl2/**";
 				INSTALL_PATH = "@rpath";
-				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
+				LIBRARY_SEARCH_PATHS = "/opt/homebrew/Cellar/sdl2/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphoneos";
-			};
-			name = Release;
-		};
-		83B0C78B27F922E7001A0EB7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G784MNW7L7;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-					GL_SILENCE_DEPRECATION,
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
-				HEADER_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
-				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				OTHER_LDFLAGS = "-lSDL2";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		83B0C78C27F922E7001A0EB7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G784MNW7L7;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = GL_SILENCE_DEPRECATION;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
-				HEADER_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
-				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/sdl2/**";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				OTHER_LDFLAGS = "-lSDL2";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -1177,15 +1050,6 @@
 			buildConfigurations = (
 				83B0C6A127F92083001A0EB7 /* Debug */,
 				83B0C6A227F92083001A0EB7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		83B0C78A27F922E7001A0EB7 /* Build configuration list for PBXNativeTarget "test" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				83B0C78B27F922E7001A0EB7 /* Debug */,
-				83B0C78C27F922E7001A0EB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
